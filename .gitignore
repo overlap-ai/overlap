@@ -3,6 +3,15 @@
 npm-debug.log
 Thumbs.db
 node_modules/
+
+# Secrets & credentials
+*.pem
+*.key
+*.secret
+credentials.json
+.env
+.env.*
+!.env.example
 .build/
 .vscode/extensions/**/out/
 extensions/**/dist/
@@ -31,6 +40,18 @@ test/componentFixtures/.screenshots/*
 dist
 .playwright-cli
 .claude/
+
+# Overlap Code
+overlap-code/node_modules/
+overlap-code/.build/
+overlap-code/out/
+overlap-code/dist/
+overlap-code/.env
+overlap-code/.env.*
+overlap-code/*.log
+overlap-code/coverage/
+overlap-code/.vscode-test/
+
 .agents/agents/*.local.md
 .github/agents/*.local.md
 .agents/agents/*.local.agent.md
